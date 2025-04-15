@@ -1,49 +1,39 @@
-# Lacak Lokasi Target Ome TV
+# Track Target Location on Ome TV
 
-Script ini digunakan untuk mendeteksi dan mengambil informasi lokasi geografis dari sebuah alamat IP, termasuk benua, negara, provinsi, kota, ISP, serta koordinat geografis. Data tersebut diambil dari API eksternal dan ditampilkan dalam format yang mudah dibaca.
+This script is used to detect and retrieve geographical location information from an IP address, including continent, country, region, city, ISP, and geographical coordinates. The data is fetched from an external API and displayed in a human-readable format.
 
-## Fitur
-- Mendeteksi alamat IP dari input string.
-- Mengambil informasi geolokasi dari alamat IP menggunakan API.
-- Menampilkan informasi lokasi geografis dan ISP dari alamat IP yang diberikan.
+Features:
+- Detects IP addresses from input strings.
+- Retrieves geolocation information from the IP address using an API.
+- Displays geographical and ISP information for the given IP address.
 
-## Prasyarat
-
-Sebelum menjalankan script, pastikan Anda telah menginstal dependensi berikut:
+Prerequisites:
+Before running the script, make sure you have installed the following dependencies:
 
 - Python 3.x
-- Modul `requests`
-- Modul `re`
-- Modul `json`
-- Modul `os`
-- Modul `http.client`
-- Modul `urllib`
+- requests module
+- re module
+- json module
+- os module
+- http.client module
+- urllib module
 
-Untuk menginstal dependensi, jalankan perintah berikut:
-```bash
+To install the required dependencies, run the following command:
 pip install requests
-```
 
-## Cara Penggunaan
-- Jalankan script menggunakan Python:
-```bash
-python located.py
-```
-- Masukkan input yang berisi alamat IP atau string yang mengandung alamat IP yang ada di inspect
-- Script akan mencari alamat IP di dalam input dan menampilkan informasi terkait lokasi dari alamat IP tersebut.
+How to Use:
+- Run the script using Python:
+  python located.py
+- Enter an input containing the IP address or a string that includes an IP address found via inspect.
+- The script will search for the IP address in the input and display the related location information.
 
-## Output
-Informasi yang ditampilkan meliputi:
-
-- Alamat IP
-- Benua
-- Negara
-- Provinsi
-- Kota
+Output:
+The displayed information includes:
+- IP Address
+- Continent
+- Country
+- Region
+- City
 - ISP
-- Latitude dan Longitude
-- Kecepatan respons (ms)
-
-## NOTE
-- Pastikan koneksi internet stabil untuk menghindari error saat mengambil data dari API.
-- Script akan membersihkan layar setelah setiap iterasi untuk menjaga tampilan yang bersih.
+- Latitude and Longitude
+- Response time (ms)
